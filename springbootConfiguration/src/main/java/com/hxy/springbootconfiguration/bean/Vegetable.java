@@ -1,5 +1,9 @@
 package com.hxy.springbootconfiguration.bean;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter@Getter
 public class Vegetable {
     private String potato;
     private String eggplant;
@@ -14,36 +18,4 @@ public class Vegetable {
                 '}';
     }
 
-    public String getPotato() {
-        return potato;
-    }
-
-    public void setPotato(String potato) {
-        this.potato = potato;
-    }
-
-    public String getEggplant() {
-        return eggplant;
-    }
-
-    public void setEggplant(String eggplant) {
-        this.eggplant = eggplant;
-    }
-
-    public String getGreen() {
-        return green;
-    }
-
-    public void setGreen(String green) {
-        this.green = green;
-    }
-
-    public Vegetable(String potato, String eggplant, String green) {
-        this.potato = potato;
-        this.eggplant = eggplant;
-        this.green = green;
-    }
-
-    public Vegetable() {
-    }
 }

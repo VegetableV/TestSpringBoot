@@ -7,6 +7,8 @@ import com.hxy.springbootconfiguration.config.BookConfig;
 import com.hxy.springbootconfiguration.config.EggConfig;
 import com.hxy.springbootconfiguration.config.VegetableConfig;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -41,5 +43,19 @@ public class JsonController {
         egg.setEgg(eggConfig.getEgg());
         egg.setRice(eggConfig.getRice());
         return egg;
+    }
+
+    @Value("${info.username}")
+    public String username;
+    @Value("${info.password}")
+    public String password;
+
+    @RequestMapping("/jasypt")
+    public String showJasypt(){
+        StringBuffer stringBuffer=new StringBuffer();
+        stringBuffer.append(username);
+        stringBuffer.append("\t");
+        stringBuffer.append(password);
+        return stringBuffer.toString();
     }
 }
