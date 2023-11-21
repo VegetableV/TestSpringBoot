@@ -6,11 +6,15 @@ import com.hxy.springbootconfiguration.bean.Vegetable;
 import com.hxy.springbootconfiguration.config.BookConfig;
 import com.hxy.springbootconfiguration.config.EggConfig;
 import com.hxy.springbootconfiguration.config.VegetableConfig;
+import org.jasypt.util.text.BasicTextEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 public class JsonController {
@@ -21,6 +25,7 @@ public class JsonController {
         Book book=new Book();
         book.setName(bookConfig.getName());
         book.setPrice(bookConfig.getPrice());
+        book.setType(bookConfig.getType());
         return book;
     }
     @Autowired
@@ -52,10 +57,20 @@ public class JsonController {
 
     @RequestMapping("/jasypt")
     public String showJasypt(){
+        BasicTextEncryptor encryptor=new BasicTextEncryptor();
+        encryptor.setPassword("1234");
         StringBuffer stringBuffer=new StringBuffer();
-        stringBuffer.append(username);
+        stringBuffer.append(encryptor.decrypt(username));
         stringBuffer.append("\t");
-        stringBuffer.append(password);
+        stringBuffer.append(encryptor.decrypt(password));
         return stringBuffer.toString();
     }
+
+//    @Value("")
+//    private List<Book> books;
+//    @RequestMapping("arrayObject")
+//    public List<Book> showArray(){
+//        List<Book> books=new ArrayList<>();
+//        return books;
+//    }
 }

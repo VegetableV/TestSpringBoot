@@ -8,12 +8,14 @@ import lombok.Setter;
 public class Book {
     private String name;
     private Double price;
+    private String[] type;
 
     @Override
     public String toString() {
         return "Book{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
+                ",type="+type+
                 '}';
     }
 

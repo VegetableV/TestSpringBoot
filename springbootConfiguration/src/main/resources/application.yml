@@ -3,5 +3,46 @@ jasypt:
     password: 1234
 
 info:
-  username: ENC(BB+8BO2eaO11yHsy1XCE2A==)
-  password: ENC(YhGwuoOk/bqfeNr9ykF3HA==)
+  username: BB+8BO2eaO11yHsy1XCE2A==
+  password: YhGwuoOk/bqfeNr9ykF3HA==
+
+server:
+  port: 8091
+
+book:
+  name: 乌合之众
+  price: 20.12
+  type:
+    - 小说
+    - 不知道
+
+#book:
+#  { name: 乌合之众(没读过),
+#    price: 30.13,
+#    type: [小说,电影]
+#  }
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8081
+book:
+  name: 笑场
+  type:
+    - 小说
+    - 纪实
+  price: 12.15
+spring:
+  profiles: dev
+---
+server:
+  port: 8082
+book:
+  name: 乌合之众
+  price: 23.23
+  type:
+    - 小说
+    - 没读过
+spring:
+  profiles: prod
