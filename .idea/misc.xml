@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/springbootConfiguration/pom.xml" />
         <option value="$PROJECT_DIR$/template/pom.xml" />
         <option value="$PROJECT_DIR$/thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/thymeleaf-crud/pom.xml" />
       </list>
     </option>
   </component>
