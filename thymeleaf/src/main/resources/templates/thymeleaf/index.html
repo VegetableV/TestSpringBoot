@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello
+<p th:text="${name}">name</p>
+<p th:utext="${name}">name</p>
+
+<!--变量表达式   传输对象-->
+<div>
+    <p>间谍过家家</p>
+    <span th:text="${spy.father}">spy father</span>
+    <span th:text="${spy.mother}">spy mother</span>
+    <span th:text="${spy.kid}">spy kid</span>
+
+</div>
+
+
+<!--选择变量表达式-->
+<div th:object="${spy}">
+    <p>间谍过家家</p>
+    <span th:text="*{father}">father</span>
+    <span th:text="*{mother}">spy mother</span>
+    <span th:text="*{kid}">spy kid</span>
+
+</div>
+
+<!--链接url表达式-->
+<a href="/welcome" th:href="@{/welcome}">hello</a>
+
+<!--消息-->
+<!--创建的文件要放在resource下-->
+<p th:utext="#{message}">message</p>
+
+<!--片段表达式-->
+
+<div th:insert="footer :: copy"></div>
+<div th:replace="footer :: copy"></div>
+<div th:include="footer :: copy"></div>
+</body>
+</html>

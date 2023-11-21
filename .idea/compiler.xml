@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="template" />
+        <module name="thymeleaf" />
         <module name="TestHelloWord" />
         <module name="springbootConfiguration" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="TestHelloWord" options="-parameters" />
       <module name="springbootConfiguration" options="-parameters" />
       <module name="template" options="-parameters" />
+      <module name="thymeleaf" options="-parameters" />
     </option>
   </component>
 </project>

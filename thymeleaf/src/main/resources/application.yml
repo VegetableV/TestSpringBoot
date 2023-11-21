@@ -1,0 +1,7 @@
+spring:
+  messages:
+    basename: message
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .ftl
