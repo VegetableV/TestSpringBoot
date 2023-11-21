@@ -1,0 +1,6 @@
+#\u914D\u7F6E\u9875\u9762\u8DEF\u5F84
+spring:
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .html
