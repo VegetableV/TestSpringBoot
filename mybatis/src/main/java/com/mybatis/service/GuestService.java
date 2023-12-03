@@ -9,5 +9,6 @@ import java.util.List;
 
 public interface GuestService {
     List<Guset> list();
+    int save(Guset guset);
 
 }
