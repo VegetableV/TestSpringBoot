@@ -11,6 +11,7 @@
         <module name="thymeleaf-crud" />
         <module name="TestHelloWord" />
         <module name="mybatis" />
+        <module name="springboot-mybatis-plus" />
         <module name="jpa" />
         <module name="thymeleaf" />
         <module name="springbootConfiguration" />
@@ -22,6 +23,7 @@
       <module name="TestHelloWord" options="-parameters" />
       <module name="jpa" options="-parameters" />
       <module name="mybatis" options="-parameters" />
+      <module name="springboot-mybatis-plus" options="-parameters" />
       <module name="springbootConfiguration" options="-parameters" />
       <module name="template" options="-parameters" />
       <module name="thymeleaf" options="-parameters" />
