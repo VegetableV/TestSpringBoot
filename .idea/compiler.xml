@@ -14,6 +14,7 @@
         <module name="springboot-mybatis-plus" />
         <module name="jpa" />
         <module name="thymeleaf" />
+        <module name="event" />
         <module name="springbootConfiguration" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="TestHelloWord" options="-parameters" />
+      <module name="event" options="-parameters" />
       <module name="jpa" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="springboot-mybatis-plus" options="-parameters" />
