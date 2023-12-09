@@ -8,8 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="template" />
+        <module name="filterandInterceptor" />
         <module name="thymeleaf-crud" />
         <module name="TestHelloWord" />
+        <module name="web" />
+        <module name="exceptiontest" />
         <module name="mybatis" />
         <module name="springboot-mybatis-plus" />
         <module name="jpa" />
@@ -23,6 +26,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="TestHelloWord" options="-parameters" />
       <module name="event" options="-parameters" />
+      <module name="exceptiontest" options="-parameters" />
+      <module name="filterandInterceptor" options="-parameters" />
       <module name="jpa" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="springboot-mybatis-plus" options="-parameters" />
@@ -30,6 +35,7 @@
       <module name="template" options="-parameters" />
       <module name="thymeleaf" options="-parameters" />
       <module name="thymeleaf-crud" options="-parameters" />
+      <module name="web" options="-parameters" />
     </option>
   </component>
 </project>
