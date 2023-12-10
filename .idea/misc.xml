@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/filterandInterceptor/pom.xml" />
         <option value="$PROJECT_DIR$/exceptiontest/pom.xml" />
         <option value="$PROJECT_DIR$/logging/pom.xml" />
+        <option value="$PROJECT_DIR$/swagger/pom.xml" />
       </list>
     </option>
   </component>
