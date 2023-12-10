@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/TestSpringBoot.iml" filepath="$PROJECT_DIR$/.idea/TestSpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/groovy-cli/groovy-cli.iml" filepath="$PROJECT_DIR$/groovy-cli/groovy-cli.iml" />
     </modules>
   </component>
 </project>
