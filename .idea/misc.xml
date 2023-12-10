@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/exceptiontest/pom.xml" />
         <option value="$PROJECT_DIR$/logging/pom.xml" />
         <option value="$PROJECT_DIR$/swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/actuator/pom.xml" />
       </list>
     </option>
   </component>
