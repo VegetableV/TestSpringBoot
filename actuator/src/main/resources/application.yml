@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    info:
+      enabled: true
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
